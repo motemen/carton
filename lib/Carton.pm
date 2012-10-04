@@ -114,6 +114,7 @@ sub download_conservative {
         ( $cascade ? "--cascade-search" : () ),
         "--scandeps",
         "--save-dists", $dir,
+        ( $download ? "--download" : () ),
         @$modules,
     );
 
